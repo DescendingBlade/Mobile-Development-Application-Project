@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#3F51B5</color>
+    <color name="red">#FB0000</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="purple">#673AB7</color>
+    <color name="pink">#F324D8</color>
+    <color name="black">#070707</color>
+    <color name="orange">#FF5722</color>
+    <color name="progress_color">#4CAF50</color> <!-- Green color for progress -->
+    <color name="progress_background_color">#E0E0E0</color> <!-- Light gray for background -->
+</resources>

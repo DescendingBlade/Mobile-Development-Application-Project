@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "887402343020",
+    "project_id": "iibmadasg2",
+    "storage_bucket": "iibmadasg2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887402343020:android:d6a7c99c429f87ab434649",
+        "android_client_info": {
+          "package_name": "com.example.foodcaloriemanagementapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_r12DFWuyPGiC7J1MRn_Z43G12PGvHTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
