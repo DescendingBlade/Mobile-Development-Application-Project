@@ -1,1 +1,1 @@
-School University Lab 8 - Build a simple app that can interact with other app
+University Lab 8 - Build a simple app that can interact with other app

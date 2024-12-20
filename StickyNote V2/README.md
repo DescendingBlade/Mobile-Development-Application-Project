@@ -1,1 +1,1 @@
-School University Lab 4 - Sticky Note Version 2
+University Lab 4 - Sticky Note Version 2

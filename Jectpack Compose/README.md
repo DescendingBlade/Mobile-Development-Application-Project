@@ -1,1 +1,1 @@
-School University Lab 6 - Jectpack Compose
+University Lab 6 - Jectpack Compose
