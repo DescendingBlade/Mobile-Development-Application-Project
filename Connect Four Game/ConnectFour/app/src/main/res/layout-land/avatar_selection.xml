@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_two">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Avatar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <GridLayout
+        android:id="@+id/avatarGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:rowCount="2"
+        android:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintBottom_toTopOf="@id/confirmAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/asunaAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avatar_asuna"
+            android:contentDescription="asuna"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/kiritoAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avatar_kirito"
+            android:contentDescription="kirito"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/mikasaAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avatar_mikasa"
+            android:contentDescription="mikasa"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/erenAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avatar_eren"
+            android:contentDescription="eren"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/moonLightAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avatar_moonlight"
+            android:contentDescription="moonlight"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/daylightAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avatar_daylight"
+            android:contentDescription="daylight"
+            android:layout_margin="8dp"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/confirmAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Selection"
+        android:background="@drawable/custom_button"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

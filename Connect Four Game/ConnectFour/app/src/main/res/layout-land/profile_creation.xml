@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_two">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/playerOneConstraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/playerTwoConstraint">
+
+            <TextView
+                android:id="@+id/playerOneTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player One"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/profilePlayerOne"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="Player One Avatar"
+                android:src="@drawable/avatar_default"
+                app:layout_constraintTop_toBottomOf="@id/playerOneTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/colourPlayerOne"/>
+
+            <ImageView
+                android:id="@+id/colourPlayerOne"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/token_red"
+                android:contentDescription="Player One Colour"
+                app:layout_constraintTop_toTopOf="@id/profilePlayerOne"
+                app:layout_constraintStart_toEndOf="@id/profilePlayerOne"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <EditText
+                android:id="@+id/playerOneName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/profilePlayerOne"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/playerTwoConstraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/playerOneConstraint"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/playerTwoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player Two"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/profilePlayerTwo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="Player Two Avatar"
+                android:src="@drawable/avatar_default"
+                app:layout_constraintTop_toBottomOf="@id/playerTwoTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/colourPlayerTwo"/>
+
+            <ImageView
+                android:id="@+id/colourPlayerTwo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/token_yellow"
+                android:contentDescription="Player Two Colour"
+                app:layout_constraintTop_toTopOf="@id/profilePlayerTwo"
+                app:layout_constraintStart_toEndOf="@id/profilePlayerTwo"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <EditText
+                android:id="@+id/playerTwoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/profilePlayerTwo"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/gridSizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Grid Size: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/playerOneConstraint"
+            app:layout_constraintEnd_toStartOf="@id/GridSizeButton"/>
+
+        <Button
+            android:id="@+id/GridSizeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="15sp"
+            android:text="6x5"
+            android:background="@drawable/custom_button"
+            app:layout_constraintTop_toTopOf="@id/gridSizeText"
+            app:layout_constraintBottom_toBottomOf="@id/gridSizeText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="Confirm"
+            android:background="@drawable/custom_button"
+            app:layout_constraintTop_toBottomOf="@id/GridSizeButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
