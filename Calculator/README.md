@@ -1,1 +1,1 @@
-School University Lab 1 - Build a Simple Calculator 
+University Lab 1 - Build a Simple Calculator 

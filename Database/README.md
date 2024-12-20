@@ -1,1 +1,1 @@
-School University Lab 7 - Build a Simple Database 
+University Lab 7 - Build a Simple Database 

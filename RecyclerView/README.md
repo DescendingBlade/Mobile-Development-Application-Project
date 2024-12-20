@@ -1,1 +1,1 @@
-School University Lab 5 - Kotlin with RecyclerView
+University Lab 5 - Kotlin with RecyclerView

@@ -1,1 +1,1 @@
-School University Lab 2 - Build a Simple Calculator version 2
+University Lab 2 - Build a Simple Calculator version 2
